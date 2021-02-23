@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:web_d/CustomText.dart';
 
-class Project_text extends StatelessWidget {
+class FeatureProject extends StatelessWidget {
   final String imagePath;
   final String projectTitle;
   final String projectDesc;
@@ -10,7 +11,7 @@ class Project_text extends StatelessWidget {
   final String tech3;
   final Function ontab;
 
-  Project_text(
+  FeatureProject(
       {this.imagePath,
         this.ontab,
         this.projectDesc,
@@ -62,14 +63,12 @@ class Project_text extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: Text(
-                            "projectDesc",
-                            style: TextStyle(
-                            fontSize: 16.0,
+                          child: CustomText(
+                            text: projectDesc,
+                            textsize: 16.0,
                             color: Colors.white.withOpacity(0.4),
                             letterSpacing: 0.75,
                           ),
-                  ),
                         ),
                       ],
                     ),
@@ -88,14 +87,13 @@ class Project_text extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.end,
                       alignment: WrapAlignment.end,
                       children: [
-                        Text(
-                          "projectTitle",
-                          style: TextStyle(
-                          fontSize: 27,
+                        CustomText(
+                          text: projectTitle,
+                          textsize: 27,
                           color: Colors.grey,
                           fontWeight: FontWeight.w700,
                           letterSpacing: 1.75,
-                        ),),
+                        ),
                       ],
                     ),
                   ),
@@ -112,33 +110,30 @@ class Project_text extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          tech1 == null ? "" : tech1,
-                          style: TextStyle(
-                          fontSize: 14,
+                        CustomText(
+                          text: tech1 == null ? "" : tech1,
+                          textsize: 14,
                           color: Colors.grey,
                           letterSpacing: 1.75,
-                        ),),
+                        ),
                         SizedBox(
                           width: 16.0,
                         ),
-                        Text(
-                           tech2 == null ? "" : tech2,
-                          style: TextStyle(
-                          fontSize: 14,
+                        CustomText(
+                          text: tech2 == null ? "" : tech2,
+                          textsize: 14,
                           color: Colors.grey,
                           letterSpacing: 1.75,
-                        ),),
+                        ),
                         SizedBox(
                           width: 16.0,
                         ),
-                        Text(
-                           tech3 == null ? "" : tech3,
-                          style: TextStyle(
-                          fontSize: 14,
+                        CustomText(
+                          text: tech3 == null ? "" : tech3,
+                          textsize: 14,
                           color: Colors.grey,
                           letterSpacing: 1.75,
-                        ),),
+                        ),
                       ],
                     ),
                   ),

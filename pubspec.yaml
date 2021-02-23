@@ -53,6 +53,7 @@ flutter:
     - images/sakshi.jpeg
     - images/pic1.jpg
     - images/pic2.jpg
+    - images/pic3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
