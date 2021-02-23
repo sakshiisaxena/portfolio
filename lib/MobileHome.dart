@@ -345,7 +345,7 @@ class _MobileHomeState extends State<MobileHome> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CustomText(
-                      text: "What I've built",
+                      text: "What I've learnt",
                       textsize: 26.0,
                       color: Color(0xffCCD6F6),
                       fontWeight: FontWeight.w700,
@@ -451,7 +451,7 @@ class _MobileHomeState extends State<MobileHome> {
                               child: Text(
                                 "Say Hello",
                                 style: TextStyle(
-                                  color: Colors.black,
+                                  color: Colors.black87,
                                 ),
                               ),
                             ),
