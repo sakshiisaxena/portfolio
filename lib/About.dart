@@ -83,7 +83,7 @@ class About extends StatelessWidget {
                     ),
                     CustomText(
                       text:
-                      "Here are a few technologies I've been working with recently:\n\n",
+                      "Here are a few technologies, I've been working with recently:\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,
