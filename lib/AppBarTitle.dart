@@ -17,7 +17,7 @@ class AppBarTitle extends StatelessWidget {
           style: TextStyle(
             fontSize: 14.0,
             letterSpacing: 3.0,
-            color: Color(0xffBAD0D0),
+            color: Color(0xffCCD6F6),
           ),
         ),
       ),
