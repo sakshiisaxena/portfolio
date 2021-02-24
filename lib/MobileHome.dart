@@ -16,7 +16,7 @@ class _MobileHomeState extends State<MobileHome> {
     return Row(
       children: [
         Icon(
-          Icons.skip_next,
+          Icons.arrow_forward_ios,
           color: Color(0xffCCD6F6).withOpacity(0.6),
           size: 14.0,
         ),
@@ -64,7 +64,7 @@ class _MobileHomeState extends State<MobileHome> {
             ],
           )),
       appBar: AppBar(
-        backgroundColor: Color(0xff061161),
+        backgroundColor: Color(0xff8d8a8a).withOpacity(0.9),
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
@@ -77,13 +77,13 @@ class _MobileHomeState extends State<MobileHome> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
+              //crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
                   height: size.height * 0.08,
                 ),
-                CustomText(
+                /*CustomText(
                   text: "Hi, this is",
                   textsize: 16.0,
                   color: Color(0xffCCD6F6),
@@ -91,23 +91,43 @@ class _MobileHomeState extends State<MobileHome> {
                 ),
                 SizedBox(
                   height: size.height * 0.02,
+                ),*/
+                /*SizedBox(
+                  height: size.height * 0.08,
+                ),*/
+                ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(80)),
+                    child: Image.asset(
+                      "images/sakshi.jpeg",
+                      width: 150,
+                      height: 150,
+                    )
                 ),
-                CustomText(
-                  text: "Sakshi Saxena.",
-                  textsize: 52.0,
-                  color: Color(0xffCCD6F6),
-                  fontWeight: FontWeight.w900,
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "Sakshi Saxena",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xffCCD6F6),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 52,
+                  ),
                 ),
                 SizedBox(
                   height: size.height * 0.04,
                 ),
-                CustomText(
-                  text: "A 20 year old sophomore balancing between Flutter and Life.",
-                  textsize: 42.0,
-                  color: Color(0xffCCD6F6).withOpacity(0.6),
-                  fontWeight: FontWeight.w700,
+                Text(
+                  "A sophomore who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xffCCD6F6).withOpacity(0.6),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 30,
+                  ),
                 ),
-                SizedBox(
+                /*SizedBox(
                   height: size.height * 0.04,
                 ),
                 Padding(
@@ -125,18 +145,18 @@ class _MobileHomeState extends State<MobileHome> {
                       )
                     ],
                   ),
-                ),
+                ),*/
                 SizedBox(
                   height: size.height * 0.06,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
                       icon: Icon(
                         FontAwesomeIcons.github,
                         color: Color(0xffffA8B2D1),
-                        size: 15.0,
+                        size: 18.0,
                       ),
                       onPressed: () {
                         method.launchURL("https://github.com/sakshiisaxena");
@@ -146,7 +166,7 @@ class _MobileHomeState extends State<MobileHome> {
                       icon: Icon(
                         FontAwesomeIcons.linkedin,
                         color: Color(0xffffA8B2D1),
-                        size: 15.0,
+                        size: 18.0,
                       ),
                       onPressed: () {
                         method.launchURL(
@@ -157,7 +177,7 @@ class _MobileHomeState extends State<MobileHome> {
                       icon: Icon(
                         FontAwesomeIcons.medium,
                         color: Color(0xffffA8B2D1),
-                        size: 15.0,
+                        size: 18.0,
                       ),
                       onPressed: () {
                         method.launchURL("https://medium.com/@Sakshi_Saxena");
@@ -274,7 +294,7 @@ class _MobileHomeState extends State<MobileHome> {
                 ),
 
                 //Image
-                Center(
+                /*Center(
                   child: Container(
                     height: size.height * 0.6,
                     width: size.width * 0.7,
@@ -310,7 +330,7 @@ class _MobileHomeState extends State<MobileHome> {
                       ],
                     ),
                   ),
-                ),
+                ),*/
 
                 //Where I've Worked title
                 Row(
@@ -327,7 +347,7 @@ class _MobileHomeState extends State<MobileHome> {
                       width: MediaQuery.of(context).size.width * 0.01,
                     ),
                     Container(
-                      width: size.width * 0.08,
+                      width: size.width / 4,
                       height: 1.10,
                       color: Color(0xff303C55),
                     ),
@@ -345,7 +365,7 @@ class _MobileHomeState extends State<MobileHome> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CustomText(
-                      text: "What I've learnt",
+                      text: "What I've build",
                       textsize: 26.0,
                       color: Color(0xffCCD6F6),
                       fontWeight: FontWeight.w700,
@@ -354,7 +374,7 @@ class _MobileHomeState extends State<MobileHome> {
                       width: MediaQuery.of(context).size.width * 0.01,
                     ),
                     Container(
-                      width: size.width * 0.04,
+                      width: size.width / 4,
                       height: 1.10,
                       color: Color(0xff303C55),
                     ),
@@ -367,7 +387,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic1.jpg",
+                  image: "images/pic4.jpg",
                 ),
 
                 SizedBox(
@@ -376,7 +396,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic2.jpg",
+                  image: "images/pic5.jpg",
                 ),
 
                 SizedBox(
@@ -385,7 +405,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic3.jpg",
+                  image: "images/pic6.jpg",
                 ),
 
                 SizedBox(

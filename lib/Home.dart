@@ -251,9 +251,10 @@ class _HomePageState extends State<HomePage> {
                                           height: 4.0,
                                         ),
                                         Container(
-                                          padding: EdgeInsets.symmetric(horizontal: 50),
+                                          padding: EdgeInsets.symmetric(horizontal: 200),
                                           child: Text(
-                                            "A 20 year sophomore balancing between Flutter and Life.",
+                                            "A sophomore who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
+                                            textAlign: TextAlign.center,
                                             style: TextStyle(
                                               color: Color(0xffCCD6F6).withOpacity(0.6),
                                               fontWeight: FontWeight.w700,
@@ -305,7 +306,7 @@ class _HomePageState extends State<HomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "What I learnt",
+                                                "What I've build",
                                                 style: TextStyle(
                                               fontSize: 26.0,
                                               color: Color(0xffCCD6F6),
