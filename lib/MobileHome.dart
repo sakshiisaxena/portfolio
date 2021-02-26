@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -10,6 +12,7 @@ class MobileHome extends StatefulWidget {
   @override
   _MobileHomeState createState() => _MobileHomeState();
 }
+
 
 class _MobileHomeState extends State<MobileHome> {
   Widget technology(BuildContext context, String text) {
@@ -63,10 +66,24 @@ class _MobileHomeState extends State<MobileHome> {
               )
             ],
           )),
-      appBar: AppBar(
-        backgroundColor: Color(0xff8d8a8a).withOpacity(0.9),
-        elevation: 0.0,
+      extendBodyBehindAppBar: true,
+      appBar: PreferredSize(
+        child: ClipRRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+            child: AppBar(
+              title: Text(''),
+              elevation: 0.0,
+              backgroundColor: Colors.black.withOpacity(0.1),
+            ),
+          ),
+        ),
+        preferredSize: Size(
+          double.infinity,
+          56.0,
+        ),
       ),
+
       body: SingleChildScrollView(
         child: Container(
           decoration: BoxDecoration(
@@ -81,20 +98,8 @@ class _MobileHomeState extends State<MobileHome> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: size.height * 0.08,
+                  height: size.height * 0.15,
                 ),
-                /*CustomText(
-                  text: "Hi, this is",
-                  textsize: 16.0,
-                  color: Color(0xffCCD6F6),
-                  letterSpacing: 3.0,
-                ),
-                SizedBox(
-                  height: size.height * 0.02,
-                ),*/
-                /*SizedBox(
-                  height: size.height * 0.08,
-                ),*/
                 ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(80)),
                     child: Image.asset(
@@ -104,7 +109,7 @@ class _MobileHomeState extends State<MobileHome> {
                     )
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 15.0,
                 ),
                 Text(
                   "Sakshi Saxena",
@@ -116,15 +121,15 @@ class _MobileHomeState extends State<MobileHome> {
                   ),
                 ),
                 SizedBox(
-                  height: size.height * 0.04,
+                  height: size.height * 0.02,
                 ),
                 Text(
                   "A sophomore who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xffCCD6F6).withOpacity(0.6),
-                    fontWeight: FontWeight.w700,
-                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 28,
                   ),
                 ),
                 /*SizedBox(
@@ -270,6 +275,7 @@ class _MobileHomeState extends State<MobileHome> {
                                   technology(context, "Dart"),
                                   technology(context, "Flutter"),
                                   technology(context, "Firebase"),
+
                                 ],
                               ),
                               Column(
@@ -277,7 +283,7 @@ class _MobileHomeState extends State<MobileHome> {
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [
                                   technology(context, "C/C++"),
-                                  technology(context, "HTML, & (S)Css"),
+                                  technology(context, "HTML, & CSS"),
                                   technology(context, "Java"),
                                 ],
                               ),
@@ -422,6 +428,9 @@ class _MobileHomeState extends State<MobileHome> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        SizedBox(
+                          height: 16.0,
+                        ),
                         CustomText(
                           text: "Get In Touch",
                           textsize: 42.0,
