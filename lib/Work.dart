@@ -77,19 +77,20 @@ class _WorkState extends State<Work> {
                                   ),
                                   CircleAvatar(
                                     backgroundColor: Color(0xffCCD6F6),
+                                    child: FaIcon(FontAwesomeIcons.crown,
+                                        color: Colors.black),
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Color(0xffCCD6F6),
+                                    child: FaIcon(FontAwesomeIcons.crown,
+                                        color: Colors.black),
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Color(0xffCCD6F6),
                                     child: FaIcon(FontAwesomeIcons.blogger,
                                         color: Colors.black),
                                   ),
-                                  CircleAvatar(
-                                    backgroundColor: Color(0xffCCD6F6),
-                                    child: FaIcon(FontAwesomeIcons.university,
-                                        color: Colors.black),
-                                  ),
-                                  CircleAvatar(
-                                    backgroundColor: Color(0xffCCD6F6),
-                                    child: FaIcon(FontAwesomeIcons.school,
-                                        color: Colors.black),
-                                  ),
+
                                 ],
                               )),
                         )

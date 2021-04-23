@@ -9,6 +9,18 @@ class MobileWorkBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         WorkCustomData(
+          title: "GDSC Team Member",
+          subTitle:
+          "GDSC Banasthali Vidyapith",
+          duration: "Apr,2021 - Present",
+        ),
+        WorkCustomData(
+          title: "Graphic Designer",
+          subTitle:
+          "Inception Wave Student Chapter",
+          duration: "Mar,2021 - Present",
+        ),
+        WorkCustomData(
           title: "Co - founder at funccFORCE",
           subTitle:
           "A women technical community",
@@ -27,18 +39,7 @@ class MobileWorkBox extends StatelessWidget {
           "Blogscord powered by Schaffen Softwares",
           duration: "April,2020 - Present",
         ),
-        WorkCustomData(
-          title: "Banasthali Vidyapith",
-          subTitle:
-          "B.tech in Electronics & Communication",
-          duration: "2019 - Present",
-        ),
-        WorkCustomData(
-          title: "Lucknow Public College",
-          subTitle:
-          "School",
-          duration: "2004 - 2019",
-        ),
+
       ],
     );
   }
