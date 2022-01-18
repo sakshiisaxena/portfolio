@@ -557,13 +557,13 @@ class _MobileHomeState extends State<MobileHome> {
                       },
                       iconSize: 15.0,
                     ),
-                    IconButton(
-                        icon: Icon(Icons.call),
-                        color: Color(0xffffA8B2D1),
-                        iconSize: 16.0,
-                        onPressed: () {
-                          method.launchCaller();
-                        }),
+                    // IconButton(
+                    //     icon: Icon(Icons.call),
+                    //     color: Color(0xffffA8B2D1),
+                    //     iconSize: 16.0,
+                    //     onPressed: () {
+                    //       method.launchCaller();
+                    //     }),
                     IconButton(
                         icon: Icon(Icons.mail),
                         color: Color(0xffffA8B2D1),

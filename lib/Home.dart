@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 MaterialButton(
                                   onPressed: () async {
-                                    method.launchURL("https://drive.google.com/file/d/1pyd3NuZKa-O82Obj4qHV1KD8vS-sGbux/view?usp=sharing");
+                                    method.launchURL("https://drive.google.com/file/d/1lpmhTh9fpWhjN8lxaWRWS7uSZNuNiER3/view?usp=sharing");
                                   },
                                   child: AppBarTitle(
                                     text: 'Resume',
@@ -193,13 +193,13 @@ class _HomePageState extends State<HomePage> {
                           },
                           iconSize: 16.0,
                         ),
-                        IconButton(
-                            icon: Icon(Icons.call),
-                            color: Color(0xffffA8B2D1),
-                            iconSize: 16.0,
-                            onPressed: () {
-                              method.launchCaller();
-                            }),
+                        // IconButton(
+                        //     icon: Icon(Icons.call),
+                        //     color: Color(0xffffA8B2D1),
+                        //     iconSize: 16.0,
+                        //     onPressed: () {
+                        //       method.launchCaller();
+                        //     }),
                         IconButton(
                             icon: Icon(Icons.mail),
                             color: Color(0xffffA8B2D1),
@@ -230,7 +230,7 @@ class _HomePageState extends State<HomePage> {
                                         ClipRRect(
                                             borderRadius: BorderRadius.all(Radius.circular(80)),
                                             child: Image.asset(
-                                              "images/sakshi.jpeg",
+                                              "images/sakshi-saxena.jpg",
                                               width: 150,
                                               height: 150,
                                             )
@@ -253,7 +253,7 @@ class _HomePageState extends State<HomePage> {
                                         Container(
                                           padding: EdgeInsets.symmetric(horizontal: 200),
                                           child: Text(
-                                            "A sophomore who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
+                                            "A pre-final year engineering student who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               color: Color(0xffCCD6F6).withOpacity(0.6),
@@ -362,6 +362,19 @@ class _HomePageState extends State<HomePage> {
                                             projectDesc:
                                             "A personal portfolio built.",
                                             projectTitle: "Personal Portfolio",
+                                            tech1: "Dart",
+                                            tech2: "Flutter",
+                                          ),
+
+                                          FeatureProject(
+                                            imagePath: "images/pic7.jpg",
+                                            ontab: () {
+                                              method.launchURL(
+                                                  "https://github.com/sakshiisaxena/Flutter_UI");
+                                            },
+                                            projectDesc:
+                                            "A fashion Store app that allows you to shop for various trendy clothes. ",
+                                            projectTitle: "A fashion store UI.",
                                             tech1: "Dart",
                                             tech2: "Flutter",
                                           ),

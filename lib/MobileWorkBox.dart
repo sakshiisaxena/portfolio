@@ -9,37 +9,36 @@ class MobileWorkBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         WorkCustomData(
-          title: "GDSC Team Member",
+          title: "OnePlus Student Ambassador",
           subTitle:
-          "GDSC Banasthali Vidyapith",
-          duration: "Apr,2021 - Present",
+          "OnePlus India",
+          duration: "Sept,2021 - Present",
         ),
         WorkCustomData(
-          title: "Graphic Designer",
+          title: "vGHC'21 Mentor",
           subTitle:
-          "Inception Wave Student Chapter",
-          duration: "Mar,2021 - Present",
+          "Project - CircuitVerse",
+          duration: "Oct,2021",
         ),
         WorkCustomData(
-          title: "Co - founder at funccFORCE",
+          title: "Google Cloud Facilitator",
           subTitle:
-          "A women technical community",
-          duration: "Oct,2020 - Present",
+          "Google Cloud India",
+          duration: "Sept,2021 - Present",
         ),
         WorkCustomData(
-          title: "Operations and Outreach Director",
+          title: "Postman Student Expert",
           subTitle:
-          "Schaffen Softwares",
-          duration: "Aug,2020 - Present",
+          "Postman",
+          duration: "Aug,2021 - Present",
         ),
         WorkCustomData(
           title:
-          "Blogger & Operational Lead",
+          "Founder - funccFORCE",
           subTitle:
-          "Blogscord powered by Schaffen Softwares",
-          duration: "April,2020 - Present",
+          "A women centric community",
+          duration: "Oct,2020 - Present",
         ),
-
       ],
     );
   }
