@@ -357,7 +357,7 @@ class _HomePageState extends State<HomePage> {
                                             imagePath: "images/pic3.jpg",
                                             ontab: () {
                                               method.launchURL(
-                                                  "https://sakshi-saxena-portfolio.netlify.app/#/");
+                                                  "https://github.com/sakshiisaxena/portfolio");
                                             },
                                             projectDesc:
                                             "A personal portfolio built.",
