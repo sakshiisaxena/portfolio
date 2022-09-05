@@ -253,7 +253,7 @@ class _HomePageState extends State<HomePage> {
                                         Container(
                                           padding: EdgeInsets.symmetric(horizontal: 200),
                                           child: Text(
-                                            "A pre-final year engineering student who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
+                                            "I'm a final year engineering student who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               color: Color(0xffCCD6F6).withOpacity(0.6),
