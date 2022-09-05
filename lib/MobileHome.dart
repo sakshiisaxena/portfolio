@@ -124,7 +124,7 @@ class _MobileHomeState extends State<MobileHome> {
                   height: size.height * 0.02,
                 ),
                 Text(
-                  "A sophomore who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
+                  "I'm a final year engineering student who loves to explore new horizons including open-source contribution and wishes to create an impact and encourage the community.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xffCCD6F6).withOpacity(0.6),
